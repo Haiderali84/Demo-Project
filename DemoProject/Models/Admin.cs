@@ -7,7 +7,7 @@ namespace DemoProject.Models
 {
     public class Admin
     {
-        public Guid AdminId { get; set; }
+        public int AdminId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
