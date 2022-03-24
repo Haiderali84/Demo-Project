@@ -14,13 +14,6 @@ namespace DemoProject.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        [HttpGet]
-        [Route(nameof(Index))]
-
-        public IActionResult Index()
-        {
-            return View();
-        }
         // User detail for its dashboard
         [HttpGet]
         [Route(nameof(GetDetail))]

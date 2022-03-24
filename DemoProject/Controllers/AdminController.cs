@@ -12,11 +12,7 @@ namespace DemoProject.Controllers
     [ApiController]
     public class AdminController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-       // Crud on User
+        //Crud on User
         [HttpGet]
         [Route(nameof(GetUser))]
         public string GetUser()
@@ -71,6 +67,8 @@ namespace DemoProject.Controllers
 
         [HttpGet]
         [Route(nameof(GetSpecificActivity))]
+
+
         public string GetSpecificActivity(int id)
         {
             var result = BusinessLogics.ActivityProcessor.GetSpecificActivity(id);
