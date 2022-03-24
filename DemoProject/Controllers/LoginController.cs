@@ -8,7 +8,11 @@ namespace DemoProject.Controllers
 {
     public class LoginController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Login()
+        {
+            return View();
+        }
+           public IActionResult Logout()
         {
             return View();
         }
